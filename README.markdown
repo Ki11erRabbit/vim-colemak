@@ -26,11 +26,11 @@ Key mappings
 ```
 Colemak layout:                  |                 QWERTY layout:
 `12345 67890-=     Move around:  |  (instead of)   `12345 67890-=
- qwfpg jluy;[]\         e        |       k          qwert yuiop[]\
- arstd HNEIo'         h   i      |     h   l        asdfg HJKL;'
- zxcvb km,./            n        |       j          zxcvb nm,./
+ qwfpb jluy;[]\         e        |       k          qwert yuiop[]\
+ arstg MNEIo'         m   i      |     h   l        asdfg HJKL;'
+ zxcdv kh,./            n        |       j          zxcvb nm,./
 
-(  novx)  h = h (Left)     i = l (Right)     e = k (Up)     n = j (Down)
+(  novx)  m = m (Left)     i = l (Right)     e = k (Up)     n = j (Down)
 
 (  novx)  l = b (Back word)            L = B (Back WORD)
 (  novx)  y = w (Forward word)         Y = W (Forward WORD)
@@ -65,7 +65,7 @@ Colemak layout:                  |                 QWERTY layout:
 (  n  x)  gK = K (Lookup)
 (  n  x)  gL = L (To line [count] from bottom of window)
 
-(  n  x)  <C-W>h = <C-W>h (Window left)
+(  n  x)  <C-W>m = <C-W>m (Window left)
 (  n  x)  <C-W>n = <C-W>j (Window down)
 (  n  x)  <C-W>e = <C-W>k (Window up)
 (  n  x)  <C-W>i = <C-W>l (Window right)
@@ -94,8 +94,8 @@ Issues
 
 ### [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive) keymap collision
 
-    " Fix for colemak.vim keymap collision. tpope/vim-fugitive's maps y<C-G>
-    " and colemak.vim maps 'y' to 'w' (word). In combination this stalls 'y'
+    " Fix for colemak-dh.vim keymap collision. tpope/vim-fugitive's maps y<C-G>
+    " and colemak-dh.vim maps 'y' to 'w' (word). In combination this stalls 'y'
     " because Vim must wait to see if the user wants to press <C-G> as well.
     augroup RemoveFugitiveMappingForColemak
         autocmd!
@@ -116,9 +116,9 @@ Changes
 Add the following to your `.vimrc`:
 
 ```
-" Turbo navigation (Colemak) {{{
+" Turbo navigation (Colemak-dh) {{{
     " Works with counts, see ":help complex-repeat"
-    nnoremap <silent> H @='5h'<CR>|xnoremap <silent> H @='5h'<CR>|onoremap <silent> H @='5h'<CR>|
+    nnoremap <silent> M @='5h'<CR>|xnoremap <silent> M @='5h'<CR>|onoremap <silent> M @='5h'<CR>|
     nnoremap <silent> N @='5gj'<CR>|xnoremap <silent> N @='5gj'<CR>|onoremap <silent> N @='5gj'<CR>|
     nnoremap <silent> E @='5gk'<CR>|xnoremap <silent> E @='5gk'<CR>|onoremap <silent> E @='5gk'<CR>|
     nnoremap <silent> I @='5l'<CR>|xnoremap <silent> I @='5l'<CR>|onoremap <silent> I @='5l'<CR>|
