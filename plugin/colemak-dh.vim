@@ -2,7 +2,7 @@
 "   Original by Shai Coleman, 2008-04-21.  http://colemak.com/
 "   Modified by Esko, 2012-09-14.
 "
-"   Load colemak.vim after all other Vim scripts.
+"   Load colemak-dh.vim after all other Vim scripts.
 "
 "   Refer to ../README.markdown for keymap explanations.
 " }}}
