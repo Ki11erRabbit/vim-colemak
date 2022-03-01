@@ -1,4 +1,4 @@
-vim-colemak
+vim-colemak-dh
 ===========
 
 Colemak key mappings for Vim. Trimmed and modified version of [Shai Coleman's configuration](http://colemak.com/pub/vim/colemak.vim).
@@ -7,13 +7,13 @@ Install
 -------
 
 1. Use [vim-plug](https://github.com/junegunn/vim-plug).
-2. Add to `.vimrc`: `Plug 'jooize/vim-colemak'`
+2. Add to `.vimrc`: `Plug 'ki11errabbit/vim-colemak-dh'`
 3. Run `vim +PlugInstall`
 4. You probably want to load vim-colemak last. Reload the plugin at the bottom of your Vim configuration.
 
     ```
     " Reload vim-colemak to remap any overridden keys
-    silent! source "$HOME/.vim/bundle/vim-colemak/plugin/colemak.vim"
+    silent! source "$HOME/.vim/bundle/vim-colemak/plugin/colemak-dh.vim"
     ```
 
     *Note: You might be using `~/.vim/plugged`.*
