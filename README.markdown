@@ -70,15 +70,6 @@ Colemak layout:                  |                 QWERTY layout:
 (  n  x)  <C-W>e = <C-W>k (Window up)
 (  n  x)  <C-W>i = <C-W>l (Window right)
 
-Lost:
-(  n  x)  H (To line [count] from top of window)
-(  n  x)  s (Substitute [count] characters) [Use wi = cl]
-(  n  x)  S (Substitute [count] lines) [Use ww = cc]
-(  n  x)  X (Cut [count] characters backwards) [Use dh = dh]
-(  n   )  Z (Quit)
-(  n  x)  <C-W>n (Window down) [Use <C-W><C-N> = <C-W><C-N>]
-(  n  x)  <C-W>i (Window down) [Use <C-W><C-I> = <C-W><C-I>]
-
 Legend:
 <C-X>     Ctrl-X
 (c     )  Command-line mode
@@ -87,7 +78,24 @@ Legend:
 (   o  )  Operator pending
 (    v )  Visual+Select mode
 (     x)  Visual mode
+
 ```
+Lost:
+-----
+
+~~```(  n  x)  H (To line [count] from top of window)```~~
+
+```(  n  x)  s (Substitute [count] characters) [Use wi = cl]```
+
+```(  n  x)  S (Substitute [count] lines) [Use ww = cc]```
+
+```(  n  x)  X (Cut [count] characters backwards) [Use dh = dh]```
+
+```(  n   )  Z (Quit)```
+
+```(  n  x)  <C-W>n (Window down) [Use <C-W><C-N> = <C-W><C-N>]```
+
+```(  n  x)  <C-W>i (Window down) [Use <C-W><C-I> = <C-W><C-I>]```
 
 Issues
 ------
